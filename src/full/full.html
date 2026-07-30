@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Story</title>
+    <link rel="stylesheet" href="./full.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Contextify</p>
+        <h1>Full story</h1>
+        <p class="description">
+          A wider, slower dive into literal meaning, context, visuals, and the bigger picture.
+        </p>
+      </section>
+
+      <section class="card" id="storyCard">
+        <div class="selection" id="selectionText">Loading selection...</div>
+        <div class="status" id="statusText">Asking the model for the full explanation...</div>
+
+        <div class="story-stage">
+          <div id="loadingOverlay" class="loading-overlay" hidden>
+            <div class="loading-orbit" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="loading-copy">
+              <div class="loading-title">Building the full story</div>
+              <div class="loading-subtitle" id="loadingSubtitle">Pulling meaning, context, visuals, and structure together...</div>
+              <div class="loading-progress" aria-label="AI response progress">
+                <div class="loading-progress-track">
+                  <div class="loading-progress-fill" id="loadingProgressFill"></div>
+                </div>
+                <div class="loading-progress-meta">
+                  <span id="loadingProgressText">Starting request...</span>
+                  <span id="loadingCountdown">0s</span>
+                </div>
+              </div>
+              <div class="loading-bars" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-content">
+            <div class="view-switch" role="tablist" aria-label="Explanation views">
+              <button id="storyTab" type="button" class="tab is-active" role="tab" aria-selected="true" aria-controls="storyView">
+                Story
+              </button>
+              <button id="visualTab" type="button" class="tab" role="tab" aria-selected="false" aria-controls="visualView">
+                Visuals
+              </button>
+              <button id="timelineTab" type="button" class="tab" role="tab" aria-selected="false" aria-controls="timelineView">
+                Timeline
+              </button>
+            </div>
+
+            <div class="views">
+              <section id="storyView" class="view-panel" role="tabpanel" aria-labelledby="storyTab"></section>
+              <section id="visualView" class="view-panel" role="tabpanel" aria-labelledby="visualTab" hidden></section>
+              <section id="timelineView" class="view-panel" role="tabpanel" aria-labelledby="timelineTab" hidden></section>
+            </div>
+
+            <div class="actions">
+              <button id="copyButton" type="button">Copy explanation</button>
+              <button id="retryButton" type="button" class="secondary">Try again</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./full.js"></script>
+  </body>
+</html>
