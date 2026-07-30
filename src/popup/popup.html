@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contextify — Quick Translate</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div class="brand">
+          <img src="../../Logo.png" alt="logo" class="logo" />
+          <div>
+            <div class="title">Contextify</div>
+            <div class="subtitle">Contextual explanations, fast</div>
+          </div>
+        </div>
+        <!-- options button removed -->
+      </header>
+
+      <section class="body">
+        <label class="field-label">Selected text</label>
+        <textarea id="selectionInput" placeholder="Select text on a page, or paste here" rows="3"></textarea>
+
+        <div class="row">
+          <button id="explainBtn" class="btn primary">Explain</button>
+          <button id="fullBtn" class="btn outline">Full story</button>
+          <button id="copyBtn" class="icon-btn small" title="Copy selection">📋</button>
+        </div>
+
+        <div id="preview" class="preview" hidden>
+          <div class="preview-title">Quick result</div>
+          <div id="previewText" class="preview-text"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="status" id="status">Ready</div>
+        <div class="credits">Contextify • lightweight</div>
+      </footer>
+    </main>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
