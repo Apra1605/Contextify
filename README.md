@@ -14,5 +14,7 @@ It should work for all Chromium-based browsers (e.g., Chrome, Edge, Opera [GX], 
 5. Select "load unpacked".
 6. Then select the folder with the files.
 
+* <b>Alternatively</b>, you could install the "Contextify.zip" file on your computer and unzip it into a folder. Then, on your local extensions page, click "load unpacked" and install it that way. (Needs to have developer mode turned on!)
+
 Again! Thank you for trying out my extension. If you have any comments or concerns, please report them in the reviews on the Edge Store!
 I wish you a great rest of your day!
