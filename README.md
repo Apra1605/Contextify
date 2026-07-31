@@ -7,7 +7,7 @@ It should work for all Chromium-based browsers (e.g., Chrome, Edge, Opera [GX], 
 1. Make sure your browser is Chromium-based:
    - My suggestion: just search the name of your browser up in this frame: "Is _______ browser based on Chromium".
 2. Download all the files into a folder on your computer.
-3. In line 422 of <i>service_worker</i> and <i>service worker_bundle</i> add the groq API key: "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" | <u><b>THE EXTENSION WILL NOT WORK WITHOUT THIS!!!</b></u>
+3. In line 422 of <i>service_worker</i> and <i>service worker_bundle</i> add the groq API key from this google doc: <i>https://docs.google.com/document/d/1q5pgTZqNXJATMofOwNmNndAzAtdttzzXf2va7b-nqsc/edit?usp=sharing</i> | <u><b>THE EXTENSION WILL NOT WORK WITHOUT THIS!!!</b></u>
 4. Go to your extensions local page
    - Usually something like: <i>"browsername://extensions"</i>
    - You could also alternatively click Manage Extensions under the top bar.
