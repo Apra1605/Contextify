@@ -7,12 +7,13 @@ It should work for all Chromium-based browsers (e.g., Chrome, Edge, Opera [GX], 
 1. Make sure your browser is Chromium-based:
    - My suggestion: just search the name of your browser up in this frame: "Is _______ browser based on Chromium".
 2. Download all the files into a folder on your computer.
-3. Go to your extensions local page
+3. In line 422 of <i>service_worker</i> and <i>service worker_bundle</i> add the groq API key: "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" | <u><b>THE EXTENSION WILL NOT WORK WITHOUT THIS!!!</b></u>
+4. Go to your extensions local page
    - Usually something like: <i>"browsername://extensions"</i>
    - You could also alternatively click Manage Extensions under the top bar.
-4. Turn on developer mode.
-5. Select "load unpacked".
-6. Then select the folder with the files.
+5. Turn on developer mode.
+6. Select "load unpacked".
+7. Then select the folder with the files.
 
 * <b>Alternatively</b>, you could install the "Contextify.zip" file on your computer and unzip it into a folder. Then, on your local extensions page, click "load unpacked" and install it that way. (Needs to have developer mode turned on!)
 
