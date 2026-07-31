@@ -419,7 +419,7 @@ function getCachedFullExplanation(selection) {
   return cached || null;
 }
 
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = "ADD THE API KEY FROM THR README!";
 const GROQ_MODEL = "llama-3.1-8b-instant";
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
