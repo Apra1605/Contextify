@@ -419,8 +419,8 @@ function getCachedFullExplanation(selection) {
   return cached || null;
 }
 
-const GROQ_API_KEY = "ADD THE API KEY FROM THR README!";
-const GROQ_MODEL = "llama-3.1-8b-instant";
+const GROQ_API_KEY = "REPLACE-WITH-API-KEY-IN_README";
+const GROQ_MODEL = "openai/gpt-oss-120b";
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 async function sendToGroq(prompt) {
@@ -518,7 +518,7 @@ async function translateSelection(selection, mode = "brief") {
     if (cleanBrief) {
       const displayText = cleanBrief.contextualMeaning;
       return {
-        model: "groq-llama-3.1-8b-instant",
+        model: GROQ_MODEL,
         mode,
         rawText: "",
         contextualMeaning: cleanBrief.contextualMeaning,
@@ -538,7 +538,7 @@ async function translateSelection(selection, mode = "brief") {
   }
 
   return {
-    model: "groq-llama-3.1-8b-instant",
+    model: GROQ_MODEL,
     mode,
     rawText: rawContent,
     ...parsed
@@ -592,7 +592,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (cachedEntry) {
       cachedEntry.promise
         .then((response) => {
-          sendResponse({ ok: true, model: "groq-llama-3.1-8b-instant", mode: "full", ...response });
+          sendResponse({ ok: true, model: GROQ_MODEL, mode: "full", ...response });
         })
         .catch((error) => {
           sendResponse({ ok: false, error: error.message });
